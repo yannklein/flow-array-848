@@ -1,28 +1,31 @@
-# p [1,2,3]
-# p [1,2,3].class
-# p true.class
-# p 2.class
-# p 2.4.class
-# p 2.fdiv(3)
-# p "hello".class
+# #### Recap 
 
-# assigning 20 to the variable 'age'
-# puts "How old are you?"
-# age = gets.chomp.to_i
+# ## Data types
+# puts 12.class
+# puts 3.14.class
+# puts "hello".class
+# puts (1..10).class
+# p (1..10).to_a
+# puts (1/2).class
+# puts 1.fdiv(2)
+# puts 1.fdiv(2).class
+# puts true.class
 
-# puts "Your age is #{age}"
+# ## Variables
+puts "How old are you?"
+# gets.chomp returns a string!!
+# we assigning the user input to the variable age
+age = gets.chomp.to_i
+puts "You are #{age} years-old!"
 
-# #re-assigning the variable age
-# # age = age + 1
-# age += 1
+# age = age + 1
+# re-assiging the variable age
+age += 1
+puts "You will be #{age} years-old next year!"
 
-# puts "Your age in one year is #{age}"
+# ## Methods
+def say_hello(name)
+  return "Hello #{name}!"
+end
 
-# def say_hello(name)
-#   return "Hello #{name}!"
-# end
-
-# puts say_hello("Yann")
-
-# p [1,2,3]
-# puts [1,2,3].join(",")
+puts say_hello("Ken")

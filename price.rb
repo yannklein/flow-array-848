@@ -1,22 +1,16 @@
-# computer_number = rand(5) # random number between 0 and 5
+# # Build "the price is right" game
 
-# guess = nil
+# computer_pick = rand(6) # random nmber 0 - 5
+# # puts "What's your number?"
+# # answer = gets.chomp.to_i
+# answer = nil
 
-# until guess == computer_number
-#   puts "Can you guess the number?"
-#   guess = gets.chomp.to_i
+# until computer_pick == answer
+#   puts "What's your number?"
+#   answer = gets.chomp.to_i
 # end
-# puts "You are correct!"
+# puts "You won"
 
-numbers = [1,2,3]
-
-for number in numbers
-  puts number
+for num in [1, 2, 3]
+  puts num
 end
-
-# num = 0
-
-# while num < 3
-#   num +=1
-#   puts num
-# end

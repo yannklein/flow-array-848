@@ -1,10 +1,11 @@
+# Build a program that tell the user
+# if he/she can vote or not
+
 puts "How old are you?"
 age = gets.chomp.to_i
 
-is_adult = age >= 18
-
-# ! == not
-# unless opposite of if
+is_adult = age > 18
+puts is_adult.class
 
 if is_adult
   puts "You can vote!"
@@ -12,8 +13,10 @@ else
   puts "You cannot vote!"
 end
 
+# action if condition
 # puts "You can vote!" if is_adult
 
+
 # if nil
-#   puts "That's a true condition"
+#   puts "The condition is true"
 # end

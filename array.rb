@@ -1,29 +1,31 @@
 #             0         1         2         3
-students = ['Laura', 'Cedrine', 'David', 'Babin']
+students = ['Nicole', 'Tyler', 'Jenny', 'Henry']
 
-p students.length
-p students.size
-p students.count
+puts students.length
+puts students.size
+puts students.count
 
-# CRUD
+# ## CRUD
 # Create
-students.push('Shante')
-students << "Nico"
+students.push("January")
+students << "Marie"
 p students
 
 # Read
 p students[1]
 
 #Update
-students[1] = "Super Cedrine"
+students[2] = "Super Jenny"
 p students
 
 # Delete
+students.delete("Nicole")
 students.delete_at(1)
-students.delete('David')
 p students
 
+# ## Iterating (unleach your coder instinct)!
 students.each do |student|
-  # do something for each student!
-  puts "#{student} is amazing!"
+  puts "#{student.capitalize} is amazing!"
 end
+
+puts students.join(" ")
